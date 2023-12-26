@@ -18,4 +18,4 @@ yarn run dev
 
 ### Deployment
 
-It is currently deployed using github pages on (lukdog.com/standup-timer)[https://lukdog.com/standup-timer]
+It is currently deployed using github pages on [lukdog.com/standup-timer](https://lukdog.com/standup-timer)
