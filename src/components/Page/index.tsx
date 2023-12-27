@@ -17,7 +17,7 @@ export default function Page({ title, children, onClose }: PageProps) {
       <div className="mx-auto h-48 max-w-6xl bg-white dark:bg-gray-800">
         <h1 className="py-20 text-center text-5xl font-bold md:text-left md:text-9xl dark:text-gray-200">{title}</h1>
       </div>
-      <div className="-mt-4 h-screen bg-[#F1F1F1] dark:bg-gray-900">
+      <div className="-mt-4 min-h-screen bg-[#F1F1F1] dark:bg-gray-900">
         <div className="text-container mx-auto max-w-6xl pt-20 dark:text-gray-300">{children}</div>
       </div>
     </section>
