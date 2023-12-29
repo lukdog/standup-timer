@@ -20,7 +20,7 @@ export default function Stage({ member, onCompleted, onNext, index }: StageProps
           isPlaying
           duration={member.time * 60}
           key={index}
-          colors={['#666666', '#F7B801', '#A30000', '#A30000']}
+          colors={['#666666', '#F7B801', '#ea580c', '#ea580c']}
           colorsTime={[member.time * 60, member.time * 30, 10, 0]}
           onComplete={onCompleted}
           size={270}
