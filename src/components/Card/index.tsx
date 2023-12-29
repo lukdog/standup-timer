@@ -4,7 +4,7 @@ type CardProps = {
 
 export default function Card({ children }: CardProps) {
   return (
-    <div className="relative z-10 mx-4 rounded-md border bg-white p-4 shadow-xl dark:border-gray-800 dark:bg-zinc-800">
+    <div className="bg-white dark:border-gray-800 relative z-10 mx-4 rounded-md border p-4 shadow-xl dark:bg-card-dark">
       {children}
     </div>
   );
