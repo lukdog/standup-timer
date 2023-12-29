@@ -17,52 +17,52 @@ export const Teams : Team[] = [
             {
                 name: "Luca",
                 role: "TL",
-                time: 3
+                time: 2
             },
             {
                 name: "Giulio",
                 role: "BE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Matteo",
                 role: "FE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Denise",
                 role: "FE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Gianmarco",
                 role: "FE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Dima",
                 role: "FE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Viktor",
                 role: "BE Dev",
-                time: 2
+                time: 1
             },
             {
                 name: "Valerio",
                 role: "Designer",
-                time: 2
+                time: 1
             },
             {
                 name: "Sara",
                 role: "Designer",
-                time: 2
+                time: 1
             },
             {
                 name: "Josefine",
                 role: "PO",
-                time: 2
+                time: 1
             },
 
         ]
@@ -73,7 +73,7 @@ export const Teams : Team[] = [
             {
                 name: "Luca",
                 role: "TL",
-                time: 3
+                time: 2
             },
             {
                 name: "Enrico",
