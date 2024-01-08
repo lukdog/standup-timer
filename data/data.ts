@@ -22,47 +22,47 @@ export const Teams : Team[] = [
             {
                 name: "Giulio",
                 role: "BE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Matteo",
                 role: "FE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Denise",
                 role: "FE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Gianmarco",
                 role: "FE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Dima",
                 role: "FE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Viktor",
                 role: "BE Dev",
-                time: 1
+                time: 2
             },
             {
                 name: "Valerio",
                 role: "Designer",
-                time: 1
+                time: 2
             },
             {
                 name: "Sara",
                 role: "Designer",
-                time: 1
+                time: 2
             },
             {
                 name: "Josefine",
                 role: "PO",
-                time: 1
+                time: 2
             },
 
         ]
