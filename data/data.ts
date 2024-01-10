@@ -1,7 +1,7 @@
 export type TeamMember = {
     name : string
     time : number
-    role : 'TL' | 'FE Dev' | 'BE Dev' | 'Mobile Dev' | 'Designer' | 'PO' 
+    role : 'TL' | 'FE Dev' | 'BE Dev' | 'Mobile Dev' | 'Designer' | 'PO' | 'DevOps'
 };
 
 export type Team = {
@@ -62,6 +62,11 @@ export const Teams : Team[] = [
             {
                 name: "Josefine",
                 role: "PO",
+                time: 2
+            },
+            {
+                name: "Massimo",
+                role: "DevOps",
                 time: 2
             },
 
