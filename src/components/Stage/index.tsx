@@ -1,5 +1,5 @@
 import { TeamMember } from '../../../data/data';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import { CountdownCircleTimer } from 'react-countdown-circle-timer';
 import Card from '../Card';
 
@@ -11,7 +11,11 @@ type StageProps = {
 };
 
 export default function Stage({ member, onCompleted, onNext, index }: StageProps) {
-  const [currentTime, setCurrentTime] = useState(member.time * 60);
+  const [currentTime, setCurrentTime] = useState(0);
+
+  useEffect(() => {
+    setCurrentTime(member.time * 60);
+  }, [member]);
 
   const addBonusTime = () => {
     setCurrentTime(currentTime + 30);
