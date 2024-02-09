@@ -35,7 +35,7 @@ export default function StandupTimer({ members }: StandupTimerProps) {
             index={currentMember}
             onCompleted={onNext}
             onNext={onNext}
-            postpone={onPostpone}
+            onPostpone={onPostpone}
           />
           {currentMember < members.length - 1 && (
             <>
