@@ -8,9 +8,10 @@ type StageProps = {
   index: number;
   onCompleted: () => void;
   onNext: () => void;
+  onPostpone: () => void;
 };
 
-export default function Stage({ member, onCompleted, onNext, index }: StageProps) {
+export default function Stage({ member, onCompleted, onNext, index, onPostpone }: StageProps) {
   const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
@@ -48,6 +49,12 @@ export default function Stage({ member, onCompleted, onNext, index }: StageProps
         ></CountdownCircleTimer>
       </div>
       <div className="m-auto flex w-fit flex-row">
+        <h1
+          onClick={onPostpone}
+          className="mx-2 w-fit cursor-pointer rounded-md bg-orange-600 px-2 py-1 text-center text-2xl font-bold text-white dark:text-text-dark"
+        >
+          POSTPONE
+        </h1>
         <h1
           onClick={addBonusTime}
           className="mx-2 w-fit cursor-pointer rounded-md bg-orange-600 px-2 py-1 text-center text-2xl font-bold text-white dark:text-text-dark"

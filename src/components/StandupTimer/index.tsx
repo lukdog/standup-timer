@@ -19,23 +19,36 @@ export default function StandupTimer({ members }: StandupTimerProps) {
     }
   };
 
+  const onPostpone = () => {
+    if (currentMember < members.length - 1) {
+      members.push(members[currentMember]);
+      setCurrentMember(currentMember + 1);
+    }
+  };
+
   return (
     <div className="mx-auto grid max-w-2xl py-4">
       {!completed && (
         <>
-          <Stage member={members[currentMember]} index={currentMember} onCompleted={onNext} onNext={onNext} />
+          <Stage
+            member={members[currentMember]}
+            index={currentMember}
+            onCompleted={onNext}
+            onNext={onNext}
+            postpone={onPostpone}
+          />
           {currentMember < members.length - 1 && (
             <>
               <div className="divider-container -mt-2 flex flex-col items-center">
-                <div className="bg-orange-600 relative z-10 h-4 w-4 rounded-full dark:brightness-75"></div>
-                <div className="bg-gray-200 dark:bg-gray-500 -mt-2 h-24 w-1 rounded-full"></div>
+                <div className="relative z-10 h-4 w-4 rounded-full bg-orange-600 dark:brightness-75"></div>
+                <div className="-mt-2 h-24 w-1 rounded-full bg-gray-200 dark:bg-gray-500"></div>
               </div>
               <Card>
-                <h1 className="text-orange-600 absolute -top-10 text-4xl font-bold md:-left-10 md:-top-10">Next One</h1>
+                <h1 className="absolute -top-10 text-4xl font-bold text-orange-600 md:-left-10 md:-top-10">Next One</h1>
                 <h1 className="text-center text-2xl font-semibold dark:text-text-dark">
                   {members[currentMember + 1].name}
                 </h1>
-                <p className="text-gray-500 text-center dark:text-text-dark">{members[currentMember + 1].role}</p>
+                <p className="text-center text-gray-500 dark:text-text-dark">{members[currentMember + 1].role}</p>
               </Card>
             </>
           )}
@@ -43,8 +56,8 @@ export default function StandupTimer({ members }: StandupTimerProps) {
       )}
       {completed && (
         <Card>
-          <h1 className="text-orange-600 p-2 text-center text-4xl font-semibold">Standup completed 🚀</h1>
-          <h2 className="dark:text-gray-400 p-2 text-center text-2xl">See you tomorrow 👋🏼</h2>
+          <h1 className="p-2 text-center text-4xl font-semibold text-orange-600">Standup completed 🚀</h1>
+          <h2 className="p-2 text-center text-2xl dark:text-gray-400">See you tomorrow 👋🏼</h2>
         </Card>
       )}
     </div>
