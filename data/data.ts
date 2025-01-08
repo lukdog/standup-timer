@@ -35,7 +35,12 @@ export const Teams : Team[] = [
                 time: 2
             },
             {
-                name: "Dima",
+                name: "Chiara",
+                role: "FE Dev",
+                time: 2
+            },
+            {
+                name: "Lia",
                 role: "FE Dev",
                 time: 2
             },
