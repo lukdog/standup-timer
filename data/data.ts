@@ -25,11 +25,6 @@ export const Teams : Team[] = [
                 time: 2
             },
             {
-                name: "Denise",
-                role: "FE Dev",
-                time: 2
-            },
-            {
                 name: "Gianmarco",
                 role: "FE Dev",
                 time: 2
