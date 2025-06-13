@@ -48,7 +48,7 @@ export default function StandupTimer({ members }: StandupTimerProps) {
                 <h1 className="text-center text-2xl font-semibold dark:text-text-dark">
                   {members[currentMember + 1].name}
                 </h1>
-                <p className="text-center text-gray-500 dark:text-text-dark">{members[currentMember + 1].time}</p>
+                <p className="text-center text-gray-500 dark:text-text-dark">{members[currentMember + 1].time + 'm'}</p>
               </Card>
             </>
           )}
