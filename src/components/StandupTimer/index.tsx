@@ -9,7 +9,7 @@ interface StandupTimerProps {
 
 export default function StandupTimer({ members }: StandupTimerProps) {
   const [currentMember, setCurrentMember] = useState(0);
-  const [completed, setCompleted] = useState(false);
+  const [completed, setCompleted] = useState(members.length === 0);
 
   const onNext = () => {
     if (currentMember < members.length - 1) {
