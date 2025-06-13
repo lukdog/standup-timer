@@ -52,7 +52,6 @@ export default function StandupIntro() {
       const [name, time] = param;
       return {
         name: name[0].toUpperCase() + name.substring(1),
-        role: 'Member',
         time: parseInt(time, 10) || 2,
       };
     });

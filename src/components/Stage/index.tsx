@@ -26,7 +26,7 @@ export default function Stage({ member, onCompleted, onNext, index, onPostpone }
     <Card>
       <h1 className="absolute -top-10 text-4xl font-bold text-orange-600 md:-left-10 md:-top-10">Current turn</h1>
       <h1 className="text-center text-3xl font-semibold dark:text-text-dark">{member.name}</h1>
-      <p className="text-center text-xl text-gray-500 dark:text-text-dark ">{member.role}</p>
+      <p className="text-center text-xl text-gray-500 dark:text-text-dark ">{member.time + 'm'}</p>
       <div className="mx-auto max-w-fit p-8 ">
         <CountdownCircleTimer
           isPlaying
