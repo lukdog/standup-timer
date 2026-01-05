@@ -42,7 +42,7 @@ export default function Stage({ member, onCompleted, onNext, index, onPostpone }
             const seconds = remainingTime % 60;
             return (
               <p className="text-4xl">
-                {minutes}:{seconds}
+                {String(minutes).padStart(2, "0")}:{String(seconds).padStart(2, "0")}
               </p>
             );
           }}
